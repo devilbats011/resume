@@ -116,7 +116,7 @@ background-size: 100% 100vh;
 background-repeat: no-repeat;
 background-position: center;
 background-clip: border-box;
-background-image: url(profile_img/img2a.jpg);
+background-image: url(../profile_img/img2a.jpg);
 }
 .secondWrapper{
 position: relative;
