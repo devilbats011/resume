@@ -1,0 +1,101 @@
+#pikachuWrapper{
+  position: fixed;
+  right:0px;
+  bottom:20px;
+  border:1px solid transparent;
+  width: 130px;
+  height: 120px;
+  z-index: 10;
+}
+
+#contact
+{
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  z-index: 11;
+}
+
+/*chatbox div*/
+#pikachuWrapper > div:nth-child(1) { 
+ 
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+    background: aliceblue;
+    position: absolute;
+    left: 12px;
+    bottom: 130px;
+    color: black;
+    padding: 0px;
+    cursor: pointer;
+
+}
+
+
+
+#pikachuWrapper > div:nth-child(1):before {
+      content:"";
+      width: 0; 
+      height: 0; 
+
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid aliceblue;
+      position: absolute;
+      bottom: -8px;
+      left: 25px;
+      padding:0px;
+
+}
+
+section > div.pikaTextBody { 
+ 
+   
+   position: absolute;
+   z-index:12;
+   top:82%;
+   left:45%;
+   transform: translate(-50%,-50%);
+   font-size: small;
+   text-align: center;
+   padding: 3px;
+    opacity: 0;
+    transition: 0.3s;
+
+}
+
+section:hover div.pikaTextBody { 
+ 
+  opacity: 1;
+
+}
+
+
+
+.pikachu{
+  position: relative;
+  cursor: pointer;
+  z-index: 11;
+  enable-background:new 0 0 128.194 128.194;
+  width: 100px;
+  height: 100px;
+  transform: scaleY(0.8);
+  left:13px;
+   
+}
+
+    @media(max-width: 700px) /* less or equal to 700 */
+    {
+      section > div.pikaTextBody { 
+       
+         font-size: 20px;
+         text-align: center;
+         padding: 3px;
+         opacity:1;
+         left:42%;
+
+
+      }
+    }

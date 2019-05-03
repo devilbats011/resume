@@ -1,0 +1,248 @@
+#loadingscreen-bg{
+  position:fixed;
+  background:black;
+  height:150vh;
+  width:150vw;
+  left:50%;
+  top: 50%;
+  border-radius: 600px;
+  transform: translate(-50%,-50%);
+  z-index: 20;
+  margin:0px;
+  padding:0px;
+  
+
+  overflow: hidden;
+}
+
+#h1-loading{
+  position: absolute;
+  left: 50%;
+  top: 105%;
+  letter-spacing: 4px;
+  transform: translate(-50%,-50%);
+  min-width:300px;
+  text-align: center;
+  text-shadow: 0px 0px 2px white
+              
+  ;
+           
+}
+
+.bg-hidden{
+  visibility:hidden;
+
+}
+
+.bg-vissible{
+  visibility: visible;
+  animation: loadingscreen-bg1 0.8s;
+}
+
+@keyframes loadingscreen-bg1{
+  0%{
+     background: #122;
+     height:1vh;width:1vw;
+     transform: translate(-50%,-50%);
+     opacity: 0;
+    }
+  33.333%{
+    height:50vh;
+    width:25vw;
+    
+  }
+  66.66%{
+    height:100vh;
+    width:50vw;
+
+  }
+
+  100%{
+      background:black;
+      height:300vh;width:150vw;
+      transform: translate(-50%,-50%);
+      opacity: 1;
+      
+
+  }
+  
+}
+
+
+
+.loader{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  background:transparent;#121121;
+  box-sizing:border-box;
+  width:250px;
+  height:250px;
+}
+
+.center_node{
+  position:relative;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  border-radius:50%;
+  background:white;
+  width:15px;
+  height:15px;
+  transform-origin:center;
+  box-shadow: 0 0 20px blue,
+              0 0 40px blue,
+              0 5px 60px blue,
+              
+              0 0 0 5px            rgb(25,25,112,0.3)     
+    ;
+  
+}
+ 
+.loader .face {
+  position:absolute;
+  border:2px solid transparent;
+  
+}
+.loader .face.face1{
+  top:10px;
+  left:10px;
+  bottom:10px;
+  right:10px;
+  
+  border-radius:50%;
+  border-left:3px solid #ffff00;
+  border-top:3px solid #ffff00;
+  animation: loading-animate 1.5s linear reverse infinite;
+}
+
+.loader .face.face2{
+  top:30px;
+  left:30px;
+  bottom:30px;
+  right:30px;
+  
+  border-radius:50%;
+  border-right:3px solid steelblue;
+  border-bottom:3px solid steelblue;
+  animation: loading-animate 1.5s linear infinite;
+}
+
+.loader .face.face3{
+  top:60px;
+  left:60px;
+  bottom:60px;
+  right:60px;
+  border-radius:50%;
+  border-top:2px solid forestgreen;
+  border-left:3px solid forestgreen;
+  animation: loading-animate 1.5s linear  reverse infinite;
+}
+
+.loader .face.face4{
+  top:80px;
+  left:80px;
+  bottom:80px;
+  right:80px;
+  
+  border-radius:60%;
+  border-top:3px solid red;
+  border-bottom:3px solid red;
+  animation: loading-animate 1.5s linear  reverse infinite;
+}
+
+.loader .face.face5
+{
+  top:100px;
+  left:100px;
+  bottom:100px;
+  right:100px;
+  
+  border-radius:50%;
+  border-top:4px solid blue;
+  border-bottom:4px solid blue;
+  animation: loading-animate 1.5s linear infinite;
+}
+
+.loader .face .circle
+{
+  position:absolute;
+  top:calc(50% - 2px);
+  left:50%;
+  width:50%;
+  height:4px;
+  background:transparent;
+  transform-origin:left;
+  
+}
+.loader .face.face1 .circle
+{
+  transform:rotate(131deg);
+}
+.loader .face.face2 .circle
+{
+  transform:rotate(141deg);
+}
+
+.loader .face.face3 .circle
+{
+  transform:rotate(128deg);
+}
+
+.loader .face .circle:before
+{
+  content:'';
+  position:absolute;
+  border-radius:50%;
+  width:10px;
+  height:10px;
+  background:navy;
+  top:-3px;
+  right:-6px;
+  
+  
+}
+
+.loader .face.face1 .circle:before
+{
+  content:'';
+  background:#ffff00;
+  box-shadow: 0 0 20px #ff0,
+              0 0 40px #ff0,
+              0 0 60px #ff0,
+              0 0 80px #ff0,
+              0 0 100px #ff0,
+              0 0 0 5px          rgb(255,255,0,0.1)     
+    ;
+}
+
+
+.loader .face.face2 .circle:before
+{
+  background:steelblue;
+  box-shadow: 0 0 20px steelblue,
+              0 0 40px steelblue,
+              0 0 60px steelblue,
+              0 0 80px steelblue,
+              0 0 100px steelblue,
+              0 0 0 5px            rgb(70,130,180,0.2)     
+    ;
+}
+
+.loader .face.face3 .circle:before
+{
+  background:forestgreen;
+  box-shadow: 0 0 20px forestgreen,
+              0 0 40px forestgreen,
+              0 0 60px forestgreen,
+              0 0 80px forestgreen,
+              0 0 100px forestgreen,
+              0 0 0 8px            rgb( 34,139,34,0.3)     
+    ;
+}
+
+@keyframes loading-animate {
+  0%{ transform:rotate(0deg);}
+  100%{ transform:rotate(360deg); }
+}

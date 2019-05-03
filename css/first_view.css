@@ -1,0 +1,411 @@
+	.welcomeP_desktop span{
+		cursor: pointer;
+		color:salmon;
+
+		font-style: italic;
+		font-weight: bold;
+	}
+
+		#ballOfLight
+		{
+			position: absolute;
+			z-index: 10;
+			left:calc(50% - 55px);
+			height: 55px;
+			width: 55px;
+			background: deepskyblue;
+		}
+
+
+		.Mywrapper{
+			background: transparent;
+			position: relative;
+			box-sizing: border-box;
+			/*background-image: url(profile_img/img1c.jpg);
+			background-blend-mode:lighten;
+			background-size: 100% 100%;
+			*/
+			width: 100%;
+			min-height: 100vh;
+			z-index: 4;	
+			
+		}
+
+	    video.header-video{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			margin:0px;
+			padding: 0px;
+			z-index: 4;
+			object-fit: cover;
+
+
+		}
+
+
+			/* ie edge only gets the following rule */
+			@supports (object-fit: cover) and (-ms-ime-align:auto) {
+			video.header-video{height:auto}
+			}
+
+
+		.divWrapper{
+			width:100%;
+			box-shadow: 0px 1px 18px #181818;
+			min-height: 100vh;
+			background: linear-gradient(to bottom,#12171a,#000B18); /*#00172D;#000B18;02386E;*/
+			position: relative;
+			padding-top: 5%;
+			padding-bottom: 5%;
+			z-index:4;
+		
+		}
+
+		.home_section1 > h5 {
+			position: relative;
+			padding-left:30px;
+
+		}
+
+		.home_section1 > p {
+			position: relative;
+			padding-left:30px;
+			margin-bottom:30px;
+		}
+		
+		.home_Mywrapper {
+					position: relative;
+					width: 80%;
+					min-height: auto;
+					border:1px solid transparent;
+					z-index: 4;
+					padding-top:10%;
+					top:0%;/*total is 77%  ???weird?? */
+					left:0%;/*total is 69% ??weird...*/
+					margin: auto;
+					display: flex;
+					flex-direction:row;
+					flex-wrap: nowrap;
+		}
+		.home_Mywrapper::before{
+
+		    content: "";
+		    position: absolute;
+		    left: 0px;
+		    top: 12%;
+		    width: 100%;
+		    min-height: 70vh;
+		    background: linear-gradient(#8cbff8,#00008c);
+		    opacity: 0.1;
+		    padding-bottom: 10%;
+
+		}
+
+	    .home_buttons
+		{
+			position: relative;
+			padding: 0px;
+			margin:0px 0px 0px 3%; /*top right bottom left*/
+			top:-10px;
+
+		}
+		.home_buttons > button
+		{
+			padding:20px 0 15px 0; /*top right bottom left*/
+			width: 150px;
+			 box-shadow:         inset 0 0 10px #000000;
+			 font-style: italic;
+			                   
+			border-radius: 5% 30% 5% 30%; /*top-left top-right  bottom-right bottom-left*/
+			font-size: 20px;
+			transition: 0.6s;
+
+	
+		}
+		.home_buttons > button:hover
+		{
+			border-radius: 5% 40% 5% 40%;
+			box-shadow:         inset 0 0 10px #000000,
+			             inset 0 0 10px #000000;
+			             
+			             font-weight: bold;
+
+		}
+		.home_section1{
+			position: relative;
+			margin-top:10px;
+			background:transparent;
+			min-height: 10vh;
+			min-height: 50vh;
+			width:65%;
+			text-align: center;
+		}
+		.home_section2{
+			position: relative;
+			background:transparent;
+			padding-top: 45px;
+			min-height: 10vh;
+			width:45%;
+		}
+
+
+
+		.home_section2 > figure
+		{
+		    margin: auto;
+		    top: 30%;
+		    border-radius: 50%;
+		    height: 210px;
+		    width: 210px;
+		    position: relative;
+		    left: 0vh;
+		    box-shadow: 0px 0px 0px 4px rgb(244,104,66,0.1), inset 0px 0px 8px #f46842;
+			animation: eve_ring 3s linear infinite;
+			animation-direction: alternate;
+
+		}
+
+		@keyframes eve_ring{
+			0%{  box-shadow: 0px 0px 0px 4px rgb(244,104,66,0.1), inset 0px 0px 8px #f46842; }
+			50%{  box-shadow: 0px 0px 0px 5px rgb(244,104,66,0.4), inset 0px 0px 8px #89410B;  }
+			100%{  box-shadow: 0px 0px 0px 4px rgb(244,104,66,0.1), inset 0px 0px 8px #f46842;  }
+		}
+
+		.home_section2 > figure:hover
+		{
+		  /*  box-shadow: 0px 0px 5px #f46842,
+                		inset 0px 0px 14px #f46842;
+              
+               height: 220px;*/
+		}
+		.home_section2 > figure > div > p
+		{
+			font-size: 20px;
+			width: 200px;
+			margin:10px auto;
+			line-height: 1;
+
+			transition: 0.6s
+
+		}
+		.home_section2 > figure > svg
+		{
+			    padding-left: 12px;
+			    width: 195px;
+			    height: 195px;
+			    transition: 0.6s;
+			    padding-top: 6px;
+			    cursor: pointer;
+		}
+
+		.home_section2 > figure > svg > circle{
+			stroke:#89410B;
+			stroke-width:2.5;
+			
+			fill: none; 
+			  stroke-dasharray: 0;
+		  stroke-dashoffset: 0;
+ 			animation: dash 8s linear alternate infinite;
+		}
+		@keyframes dash {
+		  0%{
+		  	 stroke-dasharray: 35;
+ 			
+ 			 
+		  	  
+		  }
+	 	 50%{
+	  		stroke-width:2;
+	  		}
+		  100% {
+		  	
+  			stroke-dasharray: 55;
+		    stroke-dashoffset: 1000;
+		    
+		  }
+
+	
+		}
+
+
+
+		.home_section2 > figure:hover > svg
+		{
+		 /*  padding-left: 20px;
+		   width: 180px;
+		   height: 180px; */
+		   
+		}
+		.home_section2 p 
+		{
+			color: #434547;
+			/*font-family: 'Indie Flower', cursive;*/
+			font-family: 'Inconsolata', monospace;
+			line-height: 1;
+
+		}
+		.home_section2 p > span
+		{
+			color:brown;
+			
+		}
+
+
+		.Mywrapper3{
+			position: relative;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-clip: border-box;
+			background-image: url(profile_img/img2a.jpg);
+			z-index: 3;
+		
+		}
+
+		  .home_section2 > figure > #Evebox{
+		  	width:300px;
+		  	min-height:100px;
+		  	background:#dddddd;
+		  	position: absolute;
+		  	left: -21%;
+		  	top: -125px;
+		  	color:black;
+		  	display:flex;
+		  	align-items: center;
+		  	justify-content: center;
+		  	padding:0px;
+
+		    perspective: 500px;
+		    transform-origin: bottom center; 
+		    transform-style: preserve-3d;
+		    transform: rotateX(0deg);
+		    transition: 0.7s;
+		  }
+
+		 /* .click-eve-rotateX-evechatbox
+		  {
+		  	
+		  	animation: rotateX-evechatbox 4s linear;
+
+		  	/*animation-delay: 1s;
+		  	transform: rotateX(0deg)*
+		  }/
+		 /* @keyframes rotateX-evechatbox
+		  {
+		  	0%{
+		  		transform: rotateX(0deg);
+		  	}
+		  	50%{
+		  		transform: rotateX(100deg);
+		  	}
+		  	100%{
+		  		transform: rotateX(0deg);
+		  	}
+		  }
+		  */
+		@media(max-width: 700px) /* less or equal to 700 */
+		{
+
+			h5{
+				font-size: 15px;
+				text-align: center;
+				margin:0px;
+				top:0%;
+
+			}
+			p
+			{
+			 font-size: 11px;
+			}
+
+
+			.Mywrapper{
+
+				 height: 600px;
+				 background: #1a1b1c;
+			}
+			.home_Mywrapper{
+
+			   flex-direction:column-reverse; 
+			   top:180px;
+
+			}
+			.home_Mywrapper::before{
+
+				content:"";
+				position: absolute;
+				visibility: hidden;
+		
+			}
+			.home_section1{
+				display: none;
+				
+			}
+
+
+		  #welcomeP_mobile
+		  {
+		  	
+		  	display: auto;
+		  	font-size: 11px;
+		  	color: #434547; 
+
+		  }
+		  .welcomeP_desktop
+		  {
+
+		  	/*display:none;*/
+
+
+		  }
+			.home_section2{
+
+				min-height: 50vh;
+				width:100% ;
+				
+			}
+		  .home_section2 > figure 
+		  {
+		  	position: relative;
+		  	top: 68px;
+		  }
+		  .home_section2 > figure > #Evebox{
+				top:-175px;
+
+		  }
+
+			#pikachuWrapper {
+			    right: -33px !important;
+			    bottom: -20px !important;
+			    
+			    transform: scale(0.55);
+			}
+
+
+
+		}
+
+		@media(min-width:701px) /* more or equal to 701 */
+		{
+
+
+			h5{
+			font-size: 35px;
+			margin:0px;
+			top:0%;
+		  }
+		  #welcomeP_mobile
+		  {
+		  	
+		  	display: none;
+		  	
+
+		  }
+		  .welcomeP_desktop{
+		  	display: auto;
+		  }
+
+		
+		}
+

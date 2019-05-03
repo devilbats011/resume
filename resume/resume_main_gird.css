@@ -1,0 +1,556 @@
+*,html,body,div,main,section
+{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: content-box;
+
+}
+body{
+  overflow-x: hidden;
+}
+header{
+  width:100%;
+  background: transparent;
+  text-align: center;
+}
+
+header p
+{
+  color:black;
+  display: inline-block;
+    font-family: 'Gugi', cursive;
+    font-size: small;
+}
+.item
+{
+  position: relative;
+}
+.item1 {
+  grid-area: side1;
+  background: transparent;
+ /*(background: HSLA(162, 76%, 32%, 1.00);*/
+ border-bottom: 3px solid white;
+}
+.item2 {
+  grid-area: side2;
+      background: HSLA(162, 76%, 32%, 0.2);
+      border-bottom: 3px solid white;
+}
+.item3 {
+  grid-area: side3;
+      background: linear-gradient(to right, HSLA(162, 76%, 32%, 0.2), HSLA(162, 76%, 32%, 0.4) , HSLA(162, 76%, 32%, 0.6) );
+      border-bottom: 3px solid white;
+}
+.item4 {
+  grid-area: side4;
+      background: HSLA(162, 76%, 32%, 0.4);
+}
+
+.item5 {
+  grid-area: side5;
+ background: HSLA(162, 76%, 32%, 1.00);
+}
+.item6 {
+  grid-area: side6;
+      background: HSLA(162, 76%, 32%, 0.7);
+}
+
+.grid-container {
+  display: grid;
+  /*background: #1B1111;*/
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100vh;
+  transition: 0.5s;
+  /*padding: 10px;*/
+
+  grid-template-areas:
+    "side1 side2 side3"
+    ;
+   overflow-x: hidden;
+}
+
+.grid-container > div
+{
+   
+    color: white;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.sec
+{ 
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+
+
+}
+.sec.sec1
+{
+  height: 15%;
+  background: transparent;
+  text-transform: uppercase;
+
+}
+
+
+.item.item1 main
+{
+  width:84%;
+  height:100%;
+  position: relative;
+  align-self:left;
+
+}
+
+.item.item1 main:before
+{
+  content:'';
+  position: absolute;
+  background: linear-gradient(to right,HSLA(162, 76%, 32%, 0.6) , HSLA(162, 76%, 32%, 0.2));/*#e5e5e5;*/
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  border-bottom: 3px solid white;
+
+}
+
+
+.job-title
+{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 80.666%;
+  width:80%;
+  background: firebrick;
+  text-align: left;
+
+
+}
+.job-title h2{
+  margin: 3px 0 0 85px;
+  font-family: 'Gugi', cursive;
+}
+.sec.sec2
+{
+  height: 35%; 
+  background: transparent;
+}
+
+.afnan_social_media{
+  background: transparent;
+  position: absolute;
+  overflow: hidden;
+  height: auto;
+  width: 60px;
+  left:10px;
+
+}
+
+.fa{
+  transform: rotateZ(-45deg);
+  color:white;
+}
+
+
+.icon_wrapper:nth-child(1)
+{
+  margin-top:20px;
+}
+.icon_wrapper:nth-child(1):hover
+{
+  background: #3B5998;
+}
+.icon_wrapper:nth-child(2):hover
+{
+  background: #55ACEE;
+
+}
+.icon_wrapper:nth-child(3):hover
+{
+
+  background: #007bb5;
+}
+
+.icon_wrapper
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  width: 33px;
+  height: 33px;
+  border:1px solid black;
+  margin:40px auto;
+  transform: rotateZ(45deg);
+  background: hsla(0, 0%, 0%, 0.8) ;
+  transition: 0.2s linear;
+
+}
+.profile-face
+{
+  position: relative;
+  height: 110%;
+  width: 83%;
+  top:-5%;
+  left: 80px;
+  margin: 0px;
+}
+.sec.sec3
+{
+  height: 16%; 
+  background:transparent; 
+  color:black;
+}
+.sec3 h1
+{
+  text-align: left;
+  position:relative;
+  left:80px;
+  font-family: 'Kalam', cursive; 
+  line-height: 1;
+  margin:20px 0px;
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-style: italic;
+  width: 100%;
+
+
+}
+.sec3 h1 span{
+  font-family:'Cookie', cursive;
+  font-size:42px;
+  color:firebrick;
+
+}
+.sec.sec4
+{
+  height: auto;
+  background: transparent;
+  color: black;
+
+}
+
+
+.sec4 h1
+{
+  text-align: left;
+  position:relative;
+  left:85px;
+  font-family: 'Kalam', cursive; 
+  line-height: 1;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-style: italic;
+  
+}
+
+.sec.sec4 p
+{
+  position: inherit;
+  text-align: left;
+  left: 85px;
+  width: 60%;
+  font-size: 13px;
+  line-height: 1.5;
+
+
+
+}
+.sec4 h3
+{
+  text-align: left;
+  position:relative;
+  left:115px;
+  /*font-family: 'Kalam', cursive; */
+  line-height: 1;
+  margin:10px 0px 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  
+}
+
+.wrapper-item2-middle-1
+{ 
+  position: relative;
+  display: block;
+  width:100%;
+  height: auto;
+  top: 0px;
+  border:1px solid transparent;
+  color:black;
+}
+.item2 .wrapper-item2-middle-1 h1 /*my story */
+{
+
+  position: relative;
+  top: 0px;
+  left: 80px;
+  font-family: 'Kalam', cursive;
+  letter-spacing: 2px;
+}
+.item2 .wrapper-item2-middle-1 p
+{
+
+  position: relative;
+  left: 80px;
+  margin:-25px 0 0px 0;
+  width:70%; 
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+.item2 .wrapper-item2-middle-1:nth-child(1):before
+{
+  content:"";
+  position: absolute;
+  border:3px solid hsla(360, 100%, 58%, 0.2) ;
+  height: 60%;
+  width: 60%;
+  left:70px;
+  top:44px;
+  z-index:1;
+}
+
+.item2 .wrapper-item2-middle-2 /* -SKills Container */
+{
+  position: relative;
+  display: block;
+  width:100%;
+  min-height: 30%;
+  top: 0px;
+  border:1px solid transparent;
+  color:black;
+
+}
+
+.item2 .wrapper-item2-middle-2 h1 /* -SKILLS */
+{
+
+  position: relative;
+  width: 100%;
+  height: auto;
+    top: 0px;
+  left: 80px;
+  font-family: 'Kalam', cursive;
+  letter-spacing: 2px;
+  color:black;
+  
+
+}
+
+.skills-content
+{
+
+  position: relative;
+  width: 100%;
+  height:auto;
+  top:-30px;
+}
+.skills-content div
+{
+
+  position: inherit;
+  left:80px;
+  margin:10px 0;
+  width: 60%;
+  height: 22px;
+  border:1px solid salmon;
+  border-radius: 4px;
+
+}
+.skills-content div span:nth-child(1) /* default progress bar */
+{
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 0px;
+  left:0px;
+  height:100%;
+  width: 100%;
+  background: linear-gradient(to right, #ED213A , #93291E,#ED213A);
+  transition: 2s;
+}
+
+.skills-content div span:nth-child(2)
+{
+  position: absolute;
+  bottom:1;
+  left: 5px;
+   margin:0 5px;
+   line-height: 1.5;
+   z-index: 2;
+}
+
+.skills-content div span:nth-child(3)
+{
+  position: absolute;
+  right:5px;
+  bottom:1px;
+}
+
+
+.experience-container
+{
+  position: relative;
+
+  width:100%;
+  height: 70%;
+  top: 0px;
+  border:1px solid transparent;
+  color:black;
+  text-align: left;
+}
+
+.experience-container h1
+{
+  
+  position:relative;
+  font-family: 'Kalam', cursive; 
+  line-height: 1;
+  margin:20px 0px;
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-style: italic;
+  width: 100%;
+  left:60px;
+
+
+}
+.experience-container h1 span{
+  font-family:'Cookie', cursive;
+  font-size:42px;
+  color:firebrick;
+  
+
+}
+
+
+/* */
+.exp-years-1
+{
+  text-align: right;
+  grid-area: item1;
+}
+.exp-years-2
+{
+  text-align: right;
+  grid-area: item2;
+}
+.exp-years-3
+{
+  text-align: right;
+  grid-area: item3;
+}
+.exp-desc-1
+{
+  grid-area: item4;
+}
+
+.exp-desc-2
+{
+  grid-area: item5;
+}
+
+.exp-desc-3
+{
+  grid-area: item6;
+}
+#footer-contact
+{
+  grid-area:footer;
+}
+
+.experience-grid-container section
+{
+  background: transparent;
+  border:1px solid transparent;
+}
+
+.experience-grid-container {
+  border:1px solid transparent;
+  position: relative;
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-rows: repeat(100px,3);
+  transition: 0.5s;
+
+  grid-template-areas:
+    "item1 item4"
+    "item2 item5"
+    "item3 item6"
+    "footer footer"
+    ;
+}
+.desc
+{
+  position: relative;
+  font-size:small;
+  height: 90px;
+  width: 80%;
+  background: transparent;
+
+}
+.desc p{
+  margin:5px 0px 0px 0px;
+  font-size: small;
+  
+}
+.ball
+{
+  text-align: center;
+  background: transparent;
+  position: relative;
+  min-height: 100%;
+  width: 10%;
+
+
+}
+
+
+.y
+{
+ padding:3px 0px 0px 0px;
+}
+
+.exp{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.red_ball{
+  width: 12px;
+  height: 12px;
+  border:1px solid firebrick;
+  box-shadow: inset 0px 0px 3px 1px red;
+  margin:8px auto;
+  border-radius:50%;
+
+}
+
+.red_ball:after
+{
+    content: '';
+    text-align: center;
+    background: linear-gradient(to top,HSLA(162, 76%, 32%, 0.05),firebrick);
+    position: absolute;
+    border-radius: 10%;
+    transform: translateX(50%);
+
+    transition: 1s;
+    right:50%;
+    top: 30%;
+    height: 65%;
+    width: 2px;
+    
+}
