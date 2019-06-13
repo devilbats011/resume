@@ -453,7 +453,8 @@ blobs.forEach((item,index) => {
 	intro_h5.innerText = default_intro_h5;
 
 	var introduction = document.getElementsByClassName('introduction')[0].getElementsByTagName('p')[0];
-	const default_intro_text = "Mars the First Son of Heaven is an aggressive melee strength hero who controls the battlefield with numerous knockbacks and impassable terrain. Equipped with a large shield, his Bulwark passively blocks attacks from the front and sides, making him a very durable fighter in most situations. The same shield allows him to smash enemies and knock them back, dealing critical damage that ignores all evasion. The Spear of Mars can be thrown at long range, piercing enemies to push them back, and stunning them upon contact with trees or terrain. Mars' most potent ability creates an Arena Of Blood, a circular zone where no enemy can exit or enter, as well as blocking enemy attacks from the outside. Used correctly, the Arena Of Blood can decisively split and cut off enemies from support during teamfights, making Mars a valuable asset to his team, as well as a highly dangerous opponent.";
+	const default_intro_text = `He is the typical Malaysian homeboy(born in 1994) that received Bachelor In Computer Science from Uitm in 2018. After graduated, he embarked his journey in programming by working as a web programmer. As his journey continues, his knowledge grew as well as his burning desire to seek new knowledge ,forging his programming mastery into  greater beast than before.Up until now, his loves in software engineering field still lit bright.Up close, Afnan is a friendly and cheerful young man.Even he caught in a bad situations, he likely to think on the bright side ,cast away the dark side. This way, he can stay high moral and efficient.  `;
+
 	introduction.innerText = default_intro_text;
 	introduction.style.lineHeight =1.5;
 
@@ -486,7 +487,7 @@ blobs.forEach((item,index) => {
 		 			introduction.style.opacity= 1;
 		 			introduction.innerText =
 					`
-						lorums esplum
+						Stay vigilant And Diligent !
 					`;
 		 			introduction.style.lineHeight =1.5;
 		 			},100);

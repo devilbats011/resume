@@ -30,12 +30,12 @@ function skillsBars(t)
 {
   		setTimeout(()=>
   			{
-  			 document.getElementsByClassName('skills-content')[0].children[0].firstElementChild.style.width ="80%";
-  			 document.getElementsByClassName('skills-content')[0].children[1].firstElementChild.style.width ="70%";
+  			 document.getElementsByClassName('skills-content')[0].children[0].firstElementChild.style.width ="70%";
+  			 document.getElementsByClassName('skills-content')[0].children[1].firstElementChild.style.width ="60%";
   			 document.getElementsByClassName('skills-content')[0].children[2].firstElementChild.style.width ="60%";
   			 document.getElementsByClassName('skills-content')[0].children[3].firstElementChild.style.width ="50%";
   			 document.getElementsByClassName('skills-content')[0].children[4].firstElementChild.style.width ="50%";
-  			 document.getElementsByClassName('skills-content')[0].children[5].firstElementChild.style.width ="40%";
+  			 document.getElementsByClassName('skills-content')[0].children[5].firstElementChild.style.width ="50%";
 
 
   			 } 

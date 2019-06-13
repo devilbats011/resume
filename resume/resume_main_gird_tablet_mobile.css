@@ -17,7 +17,7 @@
 {
   content:'';
   position: absolute;
-  background: linear-gradient(to right,HSLA(162, 76%, 32%, 0.6) , HSLA(162, 76%, 32%, 0.2));
+  background: linear-gradient(to right,#0e67d6b5 , HSLA(162, 76%, 32%, 0.2));
   width:119%; 
   height:100%;
   top:0px;
