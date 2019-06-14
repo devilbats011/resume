@@ -112,7 +112,7 @@ header p
 {
   content:'';
   position: absolute;
-  background: linear-gradient(to right,#0e67d6b5 , HSLA(162, 76%, 32%, 0.0));/*#e5e5e5;*/
+  background: linear-gradient(to right,#0d7480 , HSLA(162, 76%, 32%, 0.0));/*#e5e5e5;*/
   width:100%;
   height:100%;
   top:0px;
@@ -198,7 +198,7 @@ header p
 {
   position: relative;
   height: 110%;
-  width: 83%;
+  width: 70%;
   top:-5%;
   left: 80px;
   margin: 0px;

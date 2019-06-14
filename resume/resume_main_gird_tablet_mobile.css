@@ -17,7 +17,7 @@
 {
   content:'';
   position: absolute;
-  background: linear-gradient(to right,#0e67d6b5 , HSLA(162, 76%, 32%, 0.2));
+  background: linear-gradient(to right,#0d7480 , HSLA(162, 76%, 32%, 0.2));
   width:119%; 
   height:100%;
   top:0px;
@@ -29,7 +29,7 @@
       background: transparent;
   }
   .profile-face{
-        width: 90% !important;
+        width: 73% ;
   }
 
 }
@@ -60,6 +60,7 @@
   }
   .profile-face{
     left: 60px ;
+    width: 90%;
   }
   .sec3 h1
   {
